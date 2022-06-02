@@ -1,0 +1,68 @@
+body {
+  background: #E8E8E8;
+}
+
+#vision-board {
+  background-image: url('../img/background.png');
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  height: 850px;
+  margin: 50px auto;
+  overflow: auto;
+  text-transform: uppercase;
+  width: 1200px;
+}
+
+.block {
+  box-sizing: border-box;
+  float: left;
+  width: 400px;
+}
+
+.small-block {
+  height: 210px;
+  padding: 20px 40px;
+}
+
+.large-block {
+  height: 430px;
+  padding: 80px 40px;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.light-bg {
+  background: #FFF;
+}
+
+.dark-bg {
+  background: #3B3B3B;
+}
+
+.year {
+  font-family: 'Permanent Marker';
+  line-height: 20px;
+}
+
+.title {
+  color: #FFF;
+  font-size: 1.5em;
+  line-height: 30px;
+}
+
+.highlight {
+  background: #FFF44F;
+  padding: 5px 15px;
+}
+
+strong {
+  font-size: 1.9em;
+  text-transform: none;
+}
