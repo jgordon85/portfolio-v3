@@ -7,9 +7,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+/* Base styles */
 
 html {
   color: #222;
@@ -83,10 +81,9 @@ textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-/* ---------- Mobile Styles --------------- */
+/* Author's custom styles */
+
+/* Mobile Styles */
 
 html {
   font-size: 16px;
@@ -139,7 +136,7 @@ img {
   margin: 0 auto;
   width: 90%;
 }
-/* ----------- Base Header - Footer Styles --------------*/
+/* Base Header - Footer Styles */
 
 header {
   background-image: url('../img/greens.jpg');
@@ -182,24 +179,11 @@ header {
    background-image: url('../img/greens.jpg');
    background-size: cover;
    padding: 25px 0;
- }
-
- footer .socialmedia-icons ul {
-   display: flex;
-   justify-content: center;
-   flex-flow: row wrap;
- }
-
- footer .socialmedia-icons ul li {
-   margin: 0 5px;
    color: #EBEADE;
+   text-align: center;
  }
 
- footer .socialmedia-icons i {
-     font-size: 1.5em;
- }
-
- /* ----------------- About ---------------------- */
+ /* About */
  #about .content-wrapper {
    border-bottom: #51291E solid 1px;
    display: flex;
@@ -207,7 +191,7 @@ header {
    align-items: center;
  }
 
- /* ------------ Skills & Tools ---------------- */
+ /* Skills & Tools */
  #skills .content-wrapper {
    border-bottom: #51291E solid 1px;
    display: flex;
@@ -224,7 +208,7 @@ header {
    margin-bottom: 25px;
  }
 
- /* ---------------- Work -------------------- */
+ /* Work */
 
  .work-example-container {
    color: #EBEADE;
@@ -259,72 +243,32 @@ header {
    width: 75%;
  }
 
- /* -------------- Contact-------------------- */
+#contact {
+  background-color: #214528;
+  color: #EBEADE;
+  padding: 25px 0;
+  text-align: center;
+}
 
- #contact {
-    background-color: #214528;
- }
+#contact a {
+  text-decoration: underline;
+}
 
- #contact .content-wrapper {
-   display: flex;
-   align-items: center;
-   flex-flow: column wrap;
- }
+.socialmedia-icons ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
 
- #contact h3,
- #contact p {
-   color: #EBEADE;
-   text-align: center;
- }
+.socialmedia-icons ul li {
+  margin: 0 20px;
+}
 
- #contact form {
-   margin-bottom: 25px;
-   width: 80%;
- }
-
- input[type=text] {
-   box-sizing: border-box;
-   width: 100%;
-   background-color: #EBEADE;
-   color: #51291E;
-   padding: .5em;
-   border-radius: 10px;
-   text-align: center;
- }
-
- input[type=email] {
-   box-sizing: border-box;
-   width: 100%;
-   background-color: #EBEADE;
-   color: #51291E;
-   padding: .5em;
-   border-radius: 10px;
-   text-align: center;
-   margin: 10px 0;
- }
- #Message {
-   box-sizing: border-box;
-   border-radius: 10px;
-   width: 100%;
-   padding: .5em;
-   background-color: #EBEADE;
-   color: #51291E;
- }
-
- #fcf-button {
-   width: 100%;
-   padding: .5em;
-   margin: 20px 0;
-   background-color: #EBEADE;
-   color: #51291E;
-   border: none;
-   border-radius: 10px;
-   text-align: center;
-   cursor: pointer;
- }
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
+.socialmedia-icons i {
+  font-size: 4em;
+  color: #EBEADE;
+}
+/* Helper classes */
 
 /*
  * Hide visually and from screen readers
@@ -404,13 +348,10 @@ header {
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+/* Media Queries for Responsive Design */
 
 @media only screen and (min-width: 800px) {
+
   /* Tablet Styles */
 
   body {
@@ -487,42 +428,28 @@ header {
 
   /* Work */
 
-    .work-example-container {
-      background-image: url('../img/greens.jpg');
-      background-size: cover;
-    }
+  .work-example-container {
+    background-image: url('../img/greens.jpg');
+    background-size: cover;
   }
 
   /* Contact */
 
   #contact {
     background-color: #EBEADE;
-  }
-
-  #contact h3,
-  #contact p {
     color: #214528;
   }
 
-  input[type=text] {
-    border: #51291E 1px solid;
+  #contact a {
+    color: #214528;
+  }
+  
+  .socialmedia-icons i {
     color: #214528;
   }
 
-  input[type=email] {
-    border: #51291E 1px solid;
-    color: #214528;
-  }
+}
 
-  #Message {
-    border: #51291E 1px solid;
-    color: #214528;
-  }
-
-  #fcf-button {
-    border: #51291E 1px solid;
-    color: #214528;
-  }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop Styles */
@@ -596,40 +523,8 @@ header {
     width: 100%;
   }
 
-  #contact {
-    background-color: #214528;
-  }
-
-  #contact h3,
-  #contact p {
-    color: #EBEADE;
-  }
-
-  input[type=text] {
-    border: #51291E 1px solid;
-    color: #51291E;
-  }
-
-  input[type=email] {
-    border: #51291E 1px solid;
-    color: #51291E;
-  }
-
-  #Message {
-    border: #51291E 1px solid;
-    color: #51291E;
-  }
-
-  #fcf-button {
-    border: #51291E 1px solid;
-    color: #51291E;
-  }
 }
-/*============================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+/* Print styles */
 
 @media print {
   *,
