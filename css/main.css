@@ -191,6 +191,10 @@ header {
    align-items: center;
  }
 
+ #about p {
+   text-align: justify;
+ }
+
  /* Skills & Tools */
  #skills .content-wrapper {
    border-bottom: #51291E solid 1px;
@@ -228,24 +232,28 @@ header {
   align-items: center;
 }
 
- table {
-   width: 85%;
- }
+.work-example-details figure {
+  width: 85%;
+}
 
- td {
-   border: none;
-   padding: 5px;
-   text-align: left;
-   vertical-align: top;
- }
+table {
+ width: 85%;
+}
 
- .title {
-   width: 25%;
- }
+td {
+ border: none;
+ padding: 5px;
+ text-align: left;
+ vertical-align: top;
+}
 
- .description {
-   width: 75%;
- }
+.title {
+ width: 25%;
+}
+
+.description {
+ width: 75%;
+}
 
 #contact {
   background-color: #214528;
@@ -367,12 +375,6 @@ header {
 @media only screen and (min-width: 800px) {
 
   /* Tablet Styles */
-
-  body {
-    background-color: #214528;
-    color: #EBEADE;
-  }
-
   p {
     line-height: 1.5em;
   }
@@ -447,6 +449,12 @@ header {
     background-size: cover;
   }
 
+  table {
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 15px;
+    padding: 10px;
+  }
+
   /* Contact */
 
   #contact {
@@ -494,8 +502,8 @@ header {
 
   #about .content-wrapper {
     width: 75%;
-    flex-flow: row;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: flex-start;
   }
 
